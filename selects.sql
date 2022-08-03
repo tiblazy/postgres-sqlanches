@@ -2,7 +2,7 @@
 -- Seleções de dados
 
 -- 1)
-SELECT * FROM pedidos ped
+SELECT ped.*, prod.* FROM pedidos ped
 JOIN produtos_pedidos prod_ped ON prod_ped.pedido_id = ped.id
 JOIN produtos prod ON prod_ped.produto_id = prod.id;
 -- 2)
